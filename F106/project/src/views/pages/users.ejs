@@ -1,0 +1,9 @@
+<%- include('../partials/header') %>
+<h1>Użytkownicy</h1>
+<a href="/new-user">Nie widzisz tu siebie? To się dodaj!</a>
+<ul>
+<% users.forEach(u => { %>
+<li><a href="/user/<%= u.id %>"><%= u.name %></a></li>
+<% }) %>
+</ul>
+<%- include('../partials/footer') %>

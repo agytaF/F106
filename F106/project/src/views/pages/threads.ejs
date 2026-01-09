@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+
+<h1>Lista wątków</h1>
+<a href="/new-thread">Nie widzisz tu swojego wątku? To pewnie dlatego, że  nigdy nie istniał. Napraw to już dziś!</a>
+
+<form method="get">
+<input name="category" placeholder="Kategoria">
+<button type="submit">Filtruj</button>
+</form>
+
+
+<ul>
+<% threads.forEach(t => { %>
+<li>
+<a href="/thread/<%= t.id %>"><%= t.title %></a>
+</li>
+<% }) %>
+</ul>
+
+
+<%- include('../partials/footer') %>

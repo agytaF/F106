@@ -1,0 +1,5 @@
+<%- include('../partials/header') %>
+<h1><%= thread.title %></h1>
+<p><%= thread.content %></p>
+<p>Autor: <a href="/user/<%= thread.userId %>">Zobacz uzytkownika</a></p>
+<%- include('../partials/footer') %>

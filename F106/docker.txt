@@ -1,0 +1,6 @@
+Uruchomienie dockera oraz mongoDB
+
+Uruchomienie kontenera docker oraz mongoDB
+docker run -d --name forum-mongo -p 27017:27017 mongo:6.0
+
+Port: 27017 - domyślny port

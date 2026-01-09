@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<h1>Dodaj nowy wątek (Dozwolone są tylko te które propagują wyższość psów)</h1>
+
+<form method="get" action="/create-thread">
+  <input type="number" name="id" placeholder="ID wątku" required><br><br>
+  <input type="text" name="title"  placeholder="Tytuł" required><br><br>
+  <textarea name="content" placeholder="Treść" required></textarea><br><br>
+  <input type="text" name="category" placeholder="Kategoria" required><br><br>
+
+  <select name="userId">
+    <% users.forEach(u => {  %>
+      <option value="<%= u.id %>"> <%= u.name %></option>
+    <% }) %>
+  </select><br><br>
+
+  <button type="submit">Dodaj wątek</button>
+</form>
+
+<%- include('../partials/footer') %>

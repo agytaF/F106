@@ -1,0 +1,18 @@
+{
+  "name": "forum-anty-milosnikow-kotow",
+  "version": "1.0.0",
+  "author": {
+    "name": "Arkadiusz Fatyga"
+  },
+  "description": "Najjaśniejsze forum dla ludzi lubiących decydować o swoim ID oraz nie przepadających za najsłodszymi stworzeniami internetu",
+  "main": "app.js",
+  "scripts": {
+  "start": "node project/server.js"
+},
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "mongodb": "^7.0.0"
+  }
+}
+

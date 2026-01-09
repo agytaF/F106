@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<h1>Dodaj nowego użytkownika</h1>
+
+<form method="get" action="/create-user">
+  <input type="number" name="id" placeholder="ID" required><br><br>
+  <input type="text" name="name" placeholder="Nazwa" required><br><br>
+  <button type="submit">Dodaj</button>
+</form>
+
+<%- include('../partials/footer') %>
